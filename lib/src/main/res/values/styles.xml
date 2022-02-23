@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="ActivityThemeTransparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle" tools:ignore="DuplicateDefinition">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!--控制悬浮窗背景是否变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="q">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!--状态栏、导航栏颜色-->
+<!--        <item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+<!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+<!--        &lt;!&ndash;强制适配暗黑模式&ndash;&gt;-->
+<!--        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>-->
+        <!--状态栏图标颜色，true表示深色-->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!--导航栏图标颜色，true表示深色-->
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+
+    <style name="BottomSheetDialogExt" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+</resources>

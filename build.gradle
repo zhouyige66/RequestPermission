@@ -1,0 +1,47 @@
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+//        google()
+//        jcenter()
+//        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // central仓和jcenter仓的聚合仓
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        // kotlin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+        // 发布库到jitpack.io需要配置
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        // AOP
+        classpath fileTree(dir:'./lib/libs', include:['*.jar'])
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+//        google()
+//        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://jitpack.io' }
+//        maven {
+//            url MAVEN_PRIVATE//私有maven服务
+//            // 允许非https链接
+//            // allowInsecureProtocol = true
+//            // 当maven开启严格验证的时候需要填写用户名和密码
+//            credentials {
+//                username MAVEN_PRIVATE_USERNAME
+//                password MAVEN_PRIVATE_PASSWORD
+//            }
+//        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

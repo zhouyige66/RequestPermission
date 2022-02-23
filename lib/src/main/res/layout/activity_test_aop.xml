@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buryPoint"
+        android:text="埋点测试" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="permissionCheck01"
+        android:text="权限检查（无提示）" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="permissionCheck02"
+        android:text="权限检查（有提示）" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="permissionApply01"
+        android:text="权限申请（无申请权限提示，无功能描述，无权限禁止提示）" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="permissionApply02"
+        android:text="权限申请（有申请权限提示，无功能描述，无权限禁止提示）" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="permissionApply03"
+        android:text="权限申请（有申请权限提示，有功能描述，无权限禁止提示）" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="permissionApply04"
+        android:text="权限申请（有申请权限提示，有功能描述，有权限禁止提示）" />
+
+</LinearLayout>

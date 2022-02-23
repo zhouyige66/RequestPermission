@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'android-aspectjx'// AOP
+}
+apply from: "../common.gradle"
+
+android {
+    defaultConfig {
+        applicationId "cn.roy.permission"
+    }
+}
+
+aspectjx {
+    enabled true
+    // 包含以下包，解决"java.util.zip.ZipException: zip file is empty"问题
+    include 'cn.roy'
+//    exclude 'androidx','kotlin','com.google','com.squareup','com.alipay','org.apache'
+}
+
+dependencies {
+    implementation project(path:":lib")
+}
