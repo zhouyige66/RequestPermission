@@ -10,7 +10,7 @@ import android.content.Context
  * @Version: v1.0
  */
 @SuppressLint("StaticFieldLeak")
-object ContextHolder {
+internal object ContextHolder {
 
     lateinit var context: Context
     private var callback: ((allPermissionGranted: Boolean) -> Unit)? = null

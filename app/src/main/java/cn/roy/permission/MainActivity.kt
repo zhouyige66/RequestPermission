@@ -1,12 +1,11 @@
 package cn.roy.permission
 
 import android.Manifest
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import cn.roy.permission.core.ContextHolder
+import androidx.appcompat.app.AppCompatActivity
 import cn.roy.permission.core.annotations.ClickBuryPoint
 import cn.roy.permission.core.annotations.PermissionApply
 import cn.roy.permission.core.annotations.PermissionCheck
@@ -15,8 +14,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        ContextHolder.context = this
     }
 
     @ClickBuryPoint("首页", "测试", "埋点测试")

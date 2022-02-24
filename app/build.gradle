@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'android-aspectjx'// AOP
+    // REMARK 第二步:添加AOP Plugin
+    id 'android-aspectjx'
 }
 apply from: "../common.gradle"
 
@@ -11,6 +12,7 @@ android {
     }
 }
 
+// REMARK 第四步:按需添加
 aspectjx {
     enabled true
     // 包含以下包，解决"java.util.zip.ZipException: zip file is empty"问题
@@ -19,5 +21,6 @@ aspectjx {
 }
 
 dependencies {
+    // REMARK 第三步:添加依赖
     implementation project(path:":lib")
 }

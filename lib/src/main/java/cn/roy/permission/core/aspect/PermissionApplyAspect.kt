@@ -6,8 +6,8 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import cn.roy.permission.core.ContextHolder
 import cn.roy.permission.core.annotations.PermissionApply
-import cn.roy.permission.core.helper.PermissionApplyParams
-import cn.roy.permission.core.helper.RequestPermissionActivity
+import cn.roy.permission.core.component.PermissionApplyParams
+import cn.roy.permission.core.component.RequestPermissionActivity
 import org.aspectj.lang.ProceedingJoinPoint
 import org.aspectj.lang.annotation.Around
 import org.aspectj.lang.annotation.Aspect

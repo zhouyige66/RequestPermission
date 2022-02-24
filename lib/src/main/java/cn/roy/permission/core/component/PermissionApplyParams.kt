@@ -1,4 +1,4 @@
-package cn.roy.permission.core.helper
+package cn.roy.permission.core.component
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

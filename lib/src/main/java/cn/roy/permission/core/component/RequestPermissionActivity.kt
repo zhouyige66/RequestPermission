@@ -1,4 +1,4 @@
-package cn.roy.permission.core.helper
+package cn.roy.permission.core.component
 
 import android.app.Activity
 import android.content.ComponentName
@@ -44,6 +44,7 @@ class RequestPermissionActivity : Activity() {
             permissionApplyParams: PermissionApplyParams,
         ) {
             val intent = Intent(context, RequestPermissionActivity::class.java).apply {
+                this.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 this.putExtra(PERMISSION_APPLY_PARAMS, permissionApplyParams)
             }
             context.startActivity(intent)

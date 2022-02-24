@@ -16,8 +16,9 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
         // 发布库到jitpack.io需要配置
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-        // AOP
-        classpath fileTree(dir:'./lib/libs', include:['*.jar'])
+        // REMARK 第一步:添加AOP Plugin路径
+//        classpath fileTree(dir:'./repo', include:['*.jar'])
+        classpath files('./repo/gradle-android-plugin-aspectjx-2.0.10.jar')
     }
 }
 

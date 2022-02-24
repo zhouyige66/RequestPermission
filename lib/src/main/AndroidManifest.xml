@@ -3,8 +3,12 @@
     package="cn.roy.permission.core">
 
     <application>
-        <activity android:name=".helper.RequestPermissionActivity"
+        <activity android:name=".component.RequestPermissionActivity"
             android:theme="@style/ActivityThemeTransparent"/>
+
+        <provider
+            android:authorities="cn.roy.permission.${applicationId}"
+            android:name=".component.RequestPermissionProvider"/>
     </application>
 
 </manifest>
