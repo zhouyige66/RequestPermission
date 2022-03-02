@@ -12,7 +12,6 @@
    }
    dependencies {
         ···
-        classpath "com.github.zhouyige66.RequestPermissionExt:permission_ext-plugin:tag"
         // REMARK 第二步：下载repo中jar包，并放在项目根目录下repo下，指定添加AOP Plugin路径
         classpath files('./repo/gradle-android-plugin-aspectjx-2.0.10.jar')
    }
@@ -33,8 +32,8 @@
    }
    dependencies {
       ···
-      // REMARK 第五步:添加依赖
-      implementation project(path:":lib")
+      // REMARK 第五步:添加依赖，如下依赖表示最新tag为1.0.1
+      implementation 'com.github.zhouyige66:RequestPermission:1.0.1'
    }
    ```
 3. 应用中使用方式，可参照Demo

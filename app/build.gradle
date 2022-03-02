@@ -22,5 +22,6 @@ aspectjx {
 
 dependencies {
     // REMARK 第三步:添加依赖
-    implementation project(path:":lib")
+//    implementation project(path:":lib")// 本地调试使用
+    implementation 'com.github.zhouyige66:RequestPermission:1.0.1'// 远程依赖使用
 }
