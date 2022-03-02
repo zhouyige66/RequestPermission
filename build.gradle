@@ -6,7 +6,6 @@ buildscript {
 //        jcenter()
 //        mavenCentral()
         maven { url 'https://maven.aliyun.com/repository/google' }
-        // central仓和jcenter仓的聚合仓
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://jitpack.io' }
     }
@@ -27,13 +26,15 @@ allprojects {
         mavenLocal()
 //        google()
 //        jcenter()
+//        mavenCentral()
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://jitpack.io' }
 //        maven {
-//            url MAVEN_PRIVATE//私有maven服务
+//            // 私有maven服务
+//            url MAVEN_PRIVATE
 //            // 允许非https链接
-//            // allowInsecureProtocol = true
+//            allowInsecureProtocol = true
 //            // 当maven开启严格验证的时候需要填写用户名和密码
 //            credentials {
 //                username MAVEN_PRIVATE_USERNAME
